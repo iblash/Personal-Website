@@ -1,0 +1,60 @@
+.bg-1 {
+    background-color: #1abc9c;
+    color: #ffffff;
+}
+
+.bg-2 {
+    background-color: #474e5d;
+    color: #ffffff;
+}
+
+.bg-3 {
+    background-color: #ffffff;
+    color: #555555;
+}
+
+.bg-4 {
+    background-color: #2f2f2f;
+    color: #fff;
+}
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: pink;
+    color: red;
+    text-align: center;
+    font-size: larger;
+    font-weight: 500;
+}
+
+
+/* [1] The container */
+
+.img-hover-zoom {
+    height: 300px;
+    /* [1.1] Set it as per your need */
+    overflow: hidden;
+    /* [1.2] Hide the overflowing of child elements */
+}
+
+
+/* [2] Transition property for smooth transformation of images */
+
+.img-hover-zoom img {
+    transition: transform .5s ease;
+}
+
+
+/* [3] Finally, transforming the image when container gets hovered */
+
+.img-hover-zoom:hover img {
+    transform: scale(1.5);
+}
